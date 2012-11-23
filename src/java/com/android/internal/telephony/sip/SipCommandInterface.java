@@ -573,4 +573,5 @@ class SipCommandInterface extends BaseCommands implements CommandsInterface {
     public void iccTransmitApduBasicChannel(int cla, int instruction, int p1, int p2,
             int p3, String data, Message response) {
     }
+    public boolean needsOldRilFeature(String feature) { return false; }
 }
